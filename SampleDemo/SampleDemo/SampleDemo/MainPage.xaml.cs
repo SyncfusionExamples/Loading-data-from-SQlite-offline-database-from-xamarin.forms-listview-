@@ -12,14 +12,6 @@ namespace SampleDemo
         public MainPage()
         {
             InitializeComponent();
-            listView.CollapseAll();
-            listView.Loaded += ListView_Loaded;
-        }
-
-        private void ListView_Loaded(object sender, Syncfusion.ListView.XForms.ListViewLoadedEventArgs e)
-        {
-            if (listView.DataSource.Groups.Count > 0)
-                listView.ExpandGroup(listView.DataSource.Groups[0]);
         }
     }
 }

@@ -18,6 +18,7 @@ namespace SampleDemo
             viewModel = new ViewModel();
             listView.BindingContext = viewModel;
             listView.ItemsSource = viewModel.OrderItemCollection;
+            listView.CollapseAll();
             listView.Loaded += ListView_Loaded;
         }
 
